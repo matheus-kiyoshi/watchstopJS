@@ -1,0 +1,83 @@
+:root {
+    --transparent-black : rgba(0, 0, 0, 0.445);
+    --red: rgb(235, 15, 15);
+    --green: rgb(30, 184, 30);
+    --gray: rgb(211, 211, 211);
+    --dark-color: #111;
+    --font-color: #f0ece2;;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+header, footer {
+    color: var(--font-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--transparent-black);
+    width: 500px;
+    background-color: whitesmoke;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 65pt;
+}
+
+#millisecond {
+    font-size: 32pt;
+}
+
+#start, #pause, #stop {
+    border: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 15px;
+    font-size: 18pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#start:hover, #pause:hover, #stop:hover {
+    opacity: 0.8;
+    box-shadow: -1px -1px 1px var(--transparent-black),
+                1px 1px 1px var(--transparent-black);
+}
+
+#start {
+    background-color: var(--green);
+}
+
+#pause {
+    background-color: var(--gray);
+}
+
+#stop {
+    background-color: var(--red);
+}
