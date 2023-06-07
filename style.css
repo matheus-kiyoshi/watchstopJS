@@ -7,6 +7,10 @@
     --font-color: #f0ece2;;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0px;
     padding: 0px;
