@@ -1,2 +1,2 @@
 # watchstopJS
-Watchstop in Javascript.
+Stopwatch in Javascript.
